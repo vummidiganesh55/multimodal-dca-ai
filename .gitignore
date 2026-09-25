@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+.venv311/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Model/cache files
+.cache/
+huggingface/
+*.bin
+*.safetensors
+
+# Generated outputs
+outputs/
+*.png
+
+# Local datasets
+data/invoice.pdf
+data/processed/
+data/samples/
+data/handwritten.png

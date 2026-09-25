@@ -1,0 +1,807 @@
+{
+    "document": "data/invoice.pdf",
+    "description": "Draft ground-truth dataset generated from the uploaded pipeline OCR output. It is NOT final ground truth until a human verifies each page against the original invoice/document.",
+    "verification_required": true,
+    "pages": [
+        {
+            "page": 1,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1001 Date: 03-09-2026 Seller: Customer: ABC Technologies Pvt Ltd Prime Constructions Ltd Hyderabad, India Lucknow, India Item Quantity Price Amount Mouse 2 Rs. 1,100 Rs. 2,200 Laptop 1 Rs. 81,400 Rs. 81,400 Refrigerator 5 Rs. 30,600 Rs. 1,53,000 Air Conditioner 4 Rs. 42,800 Rs. 1,71,200 Subtotal: Rs. 4,07,800 GST (18%): Rs. 73,404 Rs. 4,81,204 Total Amount: Payment Status: Paid",
+            "information_extraction": {
+                "invoice_number": "INV-1001",
+                "invoice_date": "03-09-2026",
+                "vendor_name": "ABC Technologies Pvt Ltd",
+                "customer_name": "Prime Constructions Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 481204.0,
+                "payment_status": "paid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Mouse",
+                        "quantity": 2,
+                        "unit_price": 1100.0,
+                        "amount": 2200.0
+                    },
+                    {
+                        "item": "Laptop",
+                        "quantity": 1,
+                        "unit_price": 81400.0,
+                        "amount": 81400.0
+                    },
+                    {
+                        "item": "Refrigerator",
+                        "quantity": 5,
+                        "unit_price": 30600.0,
+                        "amount": 153000.0
+                    },
+                    {
+                        "item": "Air Conditioner",
+                        "quantity": 4,
+                        "unit_price": 42800.0,
+                        "amount": 171200.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 2,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1002 Date: 04-09-2026 Seller: Customer: Bluewave Software Ltd Everest Logistics Pvt Ltd Pune, India Surat, India Item Quantity Price Amount Printer 51 Rs. 25,200 Rs. 1,26,000 Air Conditioner 5 Rs. 43,600 Rs. 2,18,000 Subtotal: Rs. 3,44,000 GST (18%): Rs. 61,920 Total Amount: Rs. 4,05,920 Payment Status: Unpaid",
+            "information_extraction": {
+                "invoice_number": "INV-1002",
+                "invoice_date": "04-09-2026",
+                "vendor_name": "Bluewave Software Ltd",
+                "customer_name": "Everest Logistics Pvt Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 405920.0,
+                "payment_status": "unpaid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Printer",
+                        "quantity": 51,
+                        "unit_price": 25200.0,
+                        "amount": 126000.0
+                    },
+                    {
+                        "item": "Air Conditioner",
+                        "quantity": 5,
+                        "unit_price": 43600.0,
+                        "amount": 218000.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 3,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1003 Date: 05-09-2026 Seller: Customer: Greenfield Traders Coastal Traders Ahmedabad, India Visakhapatnam, India Item Quantity Price Amount Software License 5 Rs. 17,600 Rs. 88,000 Router 1 Rs. 3,500 Rs. 3,500 Air Conditioner 2 Rs. 45,800 Rs. 91,600 UPS Backup 3 Rs. 7,300 Rs. 21,900 Subtotal: Rs. 2,05,000 GST (18%): Rs. 36,900 Total Amount: Rs. 2,41,900 Payment Status: Pending",
+            "information_extraction": {
+                "invoice_number": "INV-1003",
+                "invoice_date": "05-09-2026",
+                "vendor_name": "Greenfield Traders",
+                "customer_name": "Coastal Traders",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 241900.0,
+                "payment_status": "pending"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Software License",
+                        "quantity": 5,
+                        "unit_price": 17600.0,
+                        "amount": 88000.0
+                    },
+                    {
+                        "item": "Router",
+                        "quantity": 1,
+                        "unit_price": 3500.0,
+                        "amount": 3500.0
+                    },
+                    {
+                        "item": "Air Conditioner",
+                        "quantity": 2,
+                        "unit_price": 45800.0,
+                        "amount": 91600.0
+                    },
+                    {
+                        "item": "UPS Backup",
+                        "quantity": 3,
+                        "unit_price": 7300.0,
+                        "amount": 21900.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 4,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1004 Date: 06-09-2026 Seller: Customer: Sunrise Electronics Harmony Hospitals Pvt Ltd Chennai, India Bhopal, India Item Quantity Price Amount Tablet 11 Rs. 29,600 Rs. 29,600 Mouse 3 Rs. 1,200 Rs. 3,600 Subtotal: Rs. 33,200 GST (18%): Rs. 5,976 Total Amount: Rs. 39,176 Payment Status: Paid",
+            "information_extraction": {
+                "invoice_number": "INV-1004",
+                "invoice_date": "06-09-2026",
+                "vendor_name": "Sunrise Electronics",
+                "customer_name": "Harmony Hospitals Pvt Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 39176.0,
+                "payment_status": "paid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Tablet",
+                        "quantity": 11,
+                        "unit_price": 29600.0,
+                        "amount": 29600.0
+                    },
+                    {
+                        "item": "Mouse",
+                        "quantity": 3,
+                        "unit_price": 1200.0,
+                        "amount": 3600.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 5,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1005 Date: 07-09-2026 Seller: Customer: Nova Furnishings Pvt Ltd Global Exports Pvt Ltd Mumbai, India Nashik, India Item Quantity Price Amount Refrigerator 4 Rs. 30,600 Rs. 1,22,400 Monitor 3 Rs. 20,600 Rs. 61,800 UPS Backup 5 Rs.7,700 Rs. 38,500 Mouse 3 Rs. 1,200 Rs. 3,600 Subtotal: Rs. 2,26,300 GST (18%): Rs. 40,734 Rs. 2,67,034 Total Amount: Payment Status: Unpaid",
+            "information_extraction": {
+                "invoice_number": "INV-1005",
+                "invoice_date": "07-09-2026",
+                "vendor_name": "Nova Furnishings Pvt Ltd",
+                "customer_name": "Global Exports Pvt Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 267034.0,
+                "payment_status": "unpaid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Refrigerator",
+                        "quantity": 4,
+                        "unit_price": 30600.0,
+                        "amount": 122400.0
+                    },
+                    {
+                        "item": "Monitor",
+                        "quantity": 3,
+                        "unit_price": 20600.0,
+                        "amount": 61800.0
+                    },
+                    {
+                        "item": "UPS Backup",
+                        "quantity": 5,
+                        "unit_price": 7700.0,
+                        "amount": 38500.0
+                    },
+                    {
+                        "item": "Mouse",
+                        "quantity": 3,
+                        "unit_price": 1200.0,
+                        "amount": 3600.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 6,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1006 Date: 08-09-2026 Seller: Customer: Orion Office Supplies Redwood Consultancy Delhi, India Chandigarh, India Item Quantity Price Amount Keyboard 11 Rs. 2,000 Rs. 2,000 Monitor 1 Rs. 19,700 Rs. 19,700 Air Conditioner 4 Rs. 45,600 Rs. 1,82,400 Mobile Phone 3 Rs. 53,100 Rs. 1,59,300 Subtotal: Rs. 3,63,400 GST (18%): Rs. 65,412 Rs. 4,28,812 Total Amount: Payment Status: Pending",
+            "information_extraction": {
+                "invoice_number": "INV-1006",
+                "invoice_date": "08-09-2026",
+                "vendor_name": "Orion Office Supplies",
+                "customer_name": "Redwood Consultancy",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 428812.0,
+                "payment_status": "pending"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Keyboard",
+                        "quantity": 11,
+                        "unit_price": 2000.0,
+                        "amount": 2000.0
+                    },
+                    {
+                        "item": "Monitor",
+                        "quantity": 1,
+                        "unit_price": 19700.0,
+                        "amount": 19700.0
+                    },
+                    {
+                        "item": "Air Conditioner",
+                        "quantity": 4,
+                        "unit_price": 45600.0,
+                        "amount": 182400.0
+                    },
+                    {
+                        "item": "Mobile Phone",
+                        "quantity": 3,
+                        "unit_price": 53100.0,
+                        "amount": 159300.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 7,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1007 Date: 09-09-2026 Seller: Customer: Pinnacle Motors Pvt Ltd Sapphire Interiors Coimbatore, India Vadodara, Indía Item Quantity Price Amount Printer 5 Rs. 25,300 Rs. 1,26,500 Refrigerator 5 Rs. 32,700 Rs. 1,63,500 Keyboard 2 Rs. 1,900 Rs. 3,800 Subtotal: Rs. 2,93,800 GST (18%): Rs. 52,884 Total Amount: Rs. 3,46,684 Payment Status: Paid",
+            "information_extraction": {
+                "invoice_number": "INV-1007",
+                "invoice_date": "09-09-2026",
+                "vendor_name": "Pinnacle Motors Pvt Ltd",
+                "customer_name": "Sapphire Interiors",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 346684.0,
+                "payment_status": "paid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Printer",
+                        "quantity": 5,
+                        "unit_price": 25300.0,
+                        "amount": 126500.0
+                    },
+                    {
+                        "item": "Refrigerator",
+                        "quantity": 5,
+                        "unit_price": 32700.0,
+                        "amount": 163500.0
+                    },
+                    {
+                        "item": "Keyboard",
+                        "quantity": 2,
+                        "unit_price": 1900.0,
+                        "amount": 3800.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 8,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1008 Date: 10-09-2026 Seller: Customer: Crystal Apparels Ltd XYZ Solutions Pvt Ltd Jaipur, India Bangalore, India Item Quantity Price Amount Software License 1 Rs. 17,500 Rs. 17,500 Air Conditioner 1 Rs. 46,300 Rs. 46,300 Tablet 4 Rs. 29,300 Rs. 1,17,200 Subtotal: Rs. 1,81,000 GST (18%): Rs. 32,580 Total Amount: Rs. 2,13,580 Payment Status: Unpaid",
+            "information_extraction": {
+                "invoice_number": "INV-1008",
+                "invoice_date": "10-09-2026",
+                "vendor_name": "Crystal Apparels Ltd",
+                "customer_name": "XYZ Solutions Pvt Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 213580.0,
+                "payment_status": "unpaid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Software License",
+                        "quantity": 1,
+                        "unit_price": 17500.0,
+                        "amount": 17500.0
+                    },
+                    {
+                        "item": "Air Conditioner",
+                        "quantity": 1,
+                        "unit_price": 46300.0,
+                        "amount": 46300.0
+                    },
+                    {
+                        "item": "Tablet",
+                        "quantity": 4,
+                        "unit_price": 29300.0,
+                        "amount": 117200.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 9,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1009 Date: 11-09-2026 Seller: Customer: Vertex Systems Pvt Ltd Metro Retailers Kochi, India Kolkata, India Item Quantity Price Amount Filing Cabinet 21 Rs. 9,100 Rs. 18,200 Tablet 4 Rs. 31,100 Rs. 1,24,400 Subtotal: Rs. 1,42,600 GST (18%): Rs. 25,668 Total Amount: Rs. 1,68,268 Payment Status: Pending",
+            "information_extraction": {
+                "invoice_number": "INV-1009",
+                "invoice_date": "11-09-2026",
+                "vendor_name": "Vertex Systems Pvt Ltd",
+                "customer_name": "Metro Retailers",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 168268.0,
+                "payment_status": "pending"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Filing Cabinet",
+                        "quantity": 21,
+                        "unit_price": 9100.0,
+                        "amount": 18200.0
+                    },
+                    {
+                        "item": "Tablet",
+                        "quantity": 4,
+                        "unit_price": 31100.0,
+                        "amount": 124400.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 10,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1010 Date: 12-09-2026 Seller: Customer: Silverline Foods Pvt Ltd Skyline Enterprises Nagpur, India Indore, India Item Quantity Price Amount UPS Backup 2 Rs. 7,600 Rs. 15,200 Office Chair 5 Rs. 8,200 Rs. 41,000 Refrigerator 5 Rs. 31,700 Rs. 1,58,500 Filing Cabinet 5 Rs. 8,900 Rs. 44,500 Subtotal: Rs. 2,59,200 GST (18%): Rs. 46,656 Rs. 3,05,856 Total Amount: Payment Status: Paid",
+            "information_extraction": {
+                "invoice_number": "INV-1010",
+                "invoice_date": "12-09-2026",
+                "vendor_name": "Silverline Foods Pvt Ltd",
+                "customer_name": "Skyline Enterprises",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 305856.0,
+                "payment_status": "paid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "UPS Backup",
+                        "quantity": 2,
+                        "unit_price": 7600.0,
+                        "amount": 15200.0
+                    },
+                    {
+                        "item": "Office Chair",
+                        "quantity": 5,
+                        "unit_price": 8200.0,
+                        "amount": 41000.0
+                    },
+                    {
+                        "item": "Refrigerator",
+                        "quantity": 5,
+                        "unit_price": 31700.0,
+                        "amount": 158500.0
+                    },
+                    {
+                        "item": "Filing Cabinet",
+                        "quantity": 5,
+                        "unit_price": 8900.0,
+                        "amount": 44500.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 11,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1011 Date: 13-09-2026 Seller: Customer: ABC Technologies Pvt Ltd Prime Constructions Ltd Hyderabad, India Lucknow, India Item Quantity Price Amount Office Chair 4 Rs. 8,100 Rs. 32,400 Headphones 1 Rs. 3,100 Rs. 3,100 Subtotal: Rs. 35,500 GST (18%): Rs. 6,390 Total Amount: Rs. 41,890 Payment Status: Unpaid",
+            "information_extraction": {
+                "invoice_number": "INV-1011",
+                "invoice_date": "13-09-2026",
+                "vendor_name": "ABC Technologies Pvt Ltd",
+                "customer_name": "Prime Constructions Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 41890.0,
+                "payment_status": "unpaid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Office Chair",
+                        "quantity": 4,
+                        "unit_price": 8100.0,
+                        "amount": 32400.0
+                    },
+                    {
+                        "item": "Headphones",
+                        "quantity": 1,
+                        "unit_price": 3100.0,
+                        "amount": 3100.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 12,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1012 Date: 14-09-2026 Seller: Customer: Bluewave Software Ltd Everest Logistics Pvt Ltd Pune, India Surat, India Item Quantity Price Amount Office Desk 51 Rs. 14,300 Rs. 71,500 Router 4 Rs. 3,500 Rs. 14,000 Subtotal: Rs. 85,500 GST (18%): Rs. 15,390 Total Amount: Rs.1,00,890 Payment Status: Pending",
+            "information_extraction": {
+                "invoice_number": "INV-1012",
+                "invoice_date": "14-09-2026",
+                "vendor_name": "Bluewave Software Ltd",
+                "customer_name": "Everest Logistics Pvt Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 100890.0,
+                "payment_status": "pending"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Office Desk",
+                        "quantity": 51,
+                        "unit_price": 14300.0,
+                        "amount": 71500.0
+                    },
+                    {
+                        "item": "Router",
+                        "quantity": 4,
+                        "unit_price": 3500.0,
+                        "amount": 14000.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 13,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1013 Date: 15-09-2026 Seller: Customer: Greenfield Traders Coastal Traders Ahmedabad, India Visakhapatnam, India Item Quantity Price Amount Headphones 1 Rs. 3,000 Rs. 3,000 Refrigerator 1 Rs. 32,500 Rs. 32,500 Software License 5 Rs. 18,400 Rs. 92,000 Subtotal: Rs. 1,27,500 GST (18%): Rs. 22,950 Total Amount: Rs. 1,50,450 Payment Status: Paid",
+            "information_extraction": {
+                "invoice_number": "INV-1013",
+                "invoice_date": "15-09-2026",
+                "vendor_name": "Greenfield Traders",
+                "customer_name": "Coastal Traders",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 150450.0,
+                "payment_status": "paid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Headphones",
+                        "quantity": 1,
+                        "unit_price": 3000.0,
+                        "amount": 3000.0
+                    },
+                    {
+                        "item": "Refrigerator",
+                        "quantity": 1,
+                        "unit_price": 32500.0,
+                        "amount": 32500.0
+                    },
+                    {
+                        "item": "Software License",
+                        "quantity": 5,
+                        "unit_price": 18400.0,
+                        "amount": 92000.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 14,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1014 Date: 16-09-2026 Seller: Customer: Sunrise Electronics Harmony Hospitals Pvt Ltd Chennai, India Bhopal, India Item Quantity Price Amount Tablet 2 Rs. 29,800 Rs. 59,600 Mouse 3 Rs. 1,200 Rs. 3,600 Mobile Phone 2 Rs. 55,000 Rs. 1,10,000 Router 1 Rs. 3,600 Rs. 3,600 Subtotal: Rs. 1,76,800 GST (18%): Rs. 31,824 Rs. 2,08,624 Total Amount: Payment Status: Unpaid",
+            "information_extraction": {
+                "invoice_number": "INV-1014",
+                "invoice_date": "16-09-2026",
+                "vendor_name": "Sunrise Electronics",
+                "customer_name": "Harmony Hospitals Pvt Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 208624.0,
+                "payment_status": "unpaid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Tablet",
+                        "quantity": 2,
+                        "unit_price": 29800.0,
+                        "amount": 59600.0
+                    },
+                    {
+                        "item": "Mouse",
+                        "quantity": 3,
+                        "unit_price": 1200.0,
+                        "amount": 3600.0
+                    },
+                    {
+                        "item": "Mobile Phone",
+                        "quantity": 2,
+                        "unit_price": 55000.0,
+                        "amount": 110000.0
+                    },
+                    {
+                        "item": "Router",
+                        "quantity": 1,
+                        "unit_price": 3600.0,
+                        "amount": 3600.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 15,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1015 Date: 17-09-2026 Seller: Customer: Nova Furnishings Pvt Ltd Global Exports Pvt Ltd Mumbai, India Nashik, India Item Quantity Price Amount Headphones 3 Rs. 3,000 Rs. 9,000 Printer 5 Rs. 26,100 Rs. 1,30,500 Office Chair 5 Rs. 8,800 Rs. 44,000 Subtotal: Rs. 1,83,500 GST (18%): Rs. 33,030 Total Amount: Rs. 2,16,530 Payment Status: Pending",
+            "information_extraction": {
+                "invoice_number": "INV-1015",
+                "invoice_date": "17-09-2026",
+                "vendor_name": "Nova Furnishings Pvt Ltd",
+                "customer_name": "Global Exports Pvt Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 216530.0,
+                "payment_status": "pending"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Headphones",
+                        "quantity": 3,
+                        "unit_price": 3000.0,
+                        "amount": 9000.0
+                    },
+                    {
+                        "item": "Printer",
+                        "quantity": 5,
+                        "unit_price": 26100.0,
+                        "amount": 130500.0
+                    },
+                    {
+                        "item": "Office Chair",
+                        "quantity": 5,
+                        "unit_price": 8800.0,
+                        "amount": 44000.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 16,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1016 Date: 18-09-2026 Seller: Customer: Orion Office Supplies Redwood Consultancy Delhi, India Chandigarh, India Item Quantity Price Amount Tablet 3 Rs. 31,100 Rs. 93,300 Webcam 3 Rs. 4,300 Rs. 12,900 Laptop 2 Rs. 83,000 Rs. 1,66,000 Mouse 1 Rs. 1,100 Rs. 1,100 Subtotal: Rs. 2,73,300 GST (18%): Rs. 49,194 Rs. 3,22,494 Total Amount: Payment Status: Paid",
+            "information_extraction": {
+                "invoice_number": "INV-1016",
+                "invoice_date": "18-09-2026",
+                "vendor_name": "Orion Office Supplies",
+                "customer_name": "Redwood Consultancy",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 322494.0,
+                "payment_status": "paid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Tablet",
+                        "quantity": 3,
+                        "unit_price": 31100.0,
+                        "amount": 93300.0
+                    },
+                    {
+                        "item": "Webcam",
+                        "quantity": 3,
+                        "unit_price": 4300.0,
+                        "amount": 12900.0
+                    },
+                    {
+                        "item": "Laptop",
+                        "quantity": 2,
+                        "unit_price": 83000.0,
+                        "amount": 166000.0
+                    },
+                    {
+                        "item": "Mouse",
+                        "quantity": 1,
+                        "unit_price": 1100.0,
+                        "amount": 1100.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 17,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1017 Date: 19-09-2026 Seller: Customer: Pinnacle Motors Pvt Ltd Sapphire Interiors Coimbatore, India Vadodara, India Item Quantity Price Amount Keyboard 2 Rs. 2,000 Rs. 4,000 Software License 5 Rs. 17,300 Rs. 86,500 Office Chair 5 Rs. 8,800 Rs. 44,000 Subtotal: Rs. 1,34,500 GST (18%): Rs. 24,210 Total Amount: Rs.1,58,710 Payment Status: Unpaid",
+            "information_extraction": {
+                "invoice_number": "INV-1017",
+                "invoice_date": "19-09-2026",
+                "vendor_name": "Pinnacle Motors Pvt Ltd",
+                "customer_name": "Sapphire Interiors",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 158710.0,
+                "payment_status": "unpaid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Keyboard",
+                        "quantity": 2,
+                        "unit_price": 2000.0,
+                        "amount": 4000.0
+                    },
+                    {
+                        "item": "Software License",
+                        "quantity": 5,
+                        "unit_price": 17300.0,
+                        "amount": 86500.0
+                    },
+                    {
+                        "item": "Office Chair",
+                        "quantity": 5,
+                        "unit_price": 8800.0,
+                        "amount": 44000.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 18,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1018 Date: 20-09-2026 Seller: Customer: Crystal Apparels Ltd XYZ Solutions Pvt Ltd Jaipur, India Bangalore, India Item Quantity Price Amount Printer 3 Rs. 24,700 Rs. 74,100 Software License 3 Rs. 17,800 Rs. 53,400 Whiteboard 5 Rs. 3,900 Rs. 19,500 Subtotal: Rs. 1,47,000 GST (18%): Rs. 26,460 Total Amount: Rs. 1,73,460 Payment Status: Pending",
+            "information_extraction": {
+                "invoice_number": "INV-1018",
+                "invoice_date": "20-09-2026",
+                "vendor_name": "Crystal Apparels Ltd",
+                "customer_name": "XYZ Solutions Pvt Ltd",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 173460.0,
+                "payment_status": "pending"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Printer",
+                        "quantity": 3,
+                        "unit_price": 24700.0,
+                        "amount": 74100.0
+                    },
+                    {
+                        "item": "Software License",
+                        "quantity": 3,
+                        "unit_price": 17800.0,
+                        "amount": 53400.0
+                    },
+                    {
+                        "item": "Whiteboard",
+                        "quantity": 5,
+                        "unit_price": 3900.0,
+                        "amount": 19500.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 19,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1019 Date: 21-09-2026 Seller: Customer: Vertex Systems Pvt Ltd Metro Retailers Kochi, India Kolkata, India Item Quantity Price Amount Air Conditioner 3 Rs. 42,800 Rs. 1,28,400 Keyboard 5 Rs. 1,900 Rs. 9,500 Subtotal: Rs. 1,37,900 GST (18%): Rs. 24,822 Total Amount: Rs.1,62,722 Payment Status: Paid",
+            "information_extraction": {
+                "invoice_number": "INV-1019",
+                "invoice_date": "21-09-2026",
+                "vendor_name": "Vertex Systems Pvt Ltd",
+                "customer_name": "Metro Retailers",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 162722.0,
+                "payment_status": "paid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Air Conditioner",
+                        "quantity": 3,
+                        "unit_price": 42800.0,
+                        "amount": 128400.0
+                    },
+                    {
+                        "item": "Keyboard",
+                        "quantity": 5,
+                        "unit_price": 1900.0,
+                        "amount": 9500.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        },
+        {
+            "page": 20,
+            "verification_status": "DRAFT_NOT_HUMAN_VERIFIED",
+            "ocr_text": "INVOICE Invoice No: INV-1020 Date: 22-09-2026 Seller: Customer: Silverline Foods Pvt Ltd Skyline Enterprises Nagpur, India Indore, Indía Item Quantity Price Amount Laptop 11 Rs. 77,800 Rs. 77,800 Keyboard 1 Rs. 2,000 Rs. 2,000 Subtotal: Rs. 79,800 GST (18%): Rs. 14,364 Total Amount: Rs. 94,164 Payment Status: Unpaid",
+            "information_extraction": {
+                "invoice_number": "INV-1020",
+                "invoice_date": "22-09-2026",
+                "vendor_name": "Silverline Foods Pvt Ltd",
+                "customer_name": "Skyline Enterprises",
+                "subtotal": null,
+                "tax": 18.0,
+                "total": 94164.0,
+                "payment_status": "unpaid"
+            },
+            "table": {
+                "rows": [
+                    {
+                        "item": "Laptop",
+                        "quantity": 11,
+                        "unit_price": 77800.0,
+                        "amount": 77800.0
+                    },
+                    {
+                        "item": "Keyboard",
+                        "quantity": 1,
+                        "unit_price": 2000.0,
+                        "amount": 2000.0
+                    }
+                ]
+            },
+            "anomaly": {
+                "is_anomaly": null
+            }
+        }
+    ]
+}

@@ -1,0 +1,268 @@
+
+{
+    "document": "data/invoice.pdf",
+    "description": "Source-derived extraction ground truth for the 20 invoice pages. Values are based on the invoice OCR/source data and should be human-verified against the original invoice PDF before being treated as final benchmark ground truth.",
+    "verification_status": "SOURCE_DERIVED_NOT_HUMAN_VERIFIED",
+    "documents": [
+        {
+            "invoice_number": "INV-1001",
+            "extraction": {
+                "invoice_number": "INV-1001",
+                "invoice_date": "03-09-2026",
+                "vendor_name": "ABC Technologies Pvt Ltd",
+                "customer_name": "Prime Constructions Ltd",
+                "subtotal": 407800.0,
+                "tax": 73404.0,
+                "total": 481204.0,
+                "payment_status": "paid"
+            }
+        },
+        {
+            "invoice_number": "INV-1002",
+            "extraction": {
+                "invoice_number": "INV-1002",
+                "invoice_date": "04-09-2026",
+                "vendor_name": "Bluewave Software Ltd",
+                "customer_name": "Everest Logistics Pvt Ltd",
+                "subtotal": 344000.0,
+                "tax": 61920.0,
+                "total": 405920.0,
+                "payment_status": "unpaid"
+            }
+        },
+        {
+            "invoice_number": "INV-1003",
+            "extraction": {
+                "invoice_number": "INV-1003",
+                "invoice_date": "05-09-2026",
+                "vendor_name": "Greenfield Traders",
+                "customer_name": "Coastal Traders",
+                "subtotal": 205000.0,
+                "tax": 36900.0,
+                "total": 241900.0,
+                "payment_status": "pending"
+            }
+        },
+        {
+            "invoice_number": "INV-1004",
+            "extraction": {
+                "invoice_number": "INV-1004",
+                "invoice_date": "06-09-2026",
+                "vendor_name": "Sunrise Electronics",
+                "customer_name": "Harmony Hospitals Pvt Ltd",
+                "subtotal": 33200.0,
+                "tax": 5976.0,
+                "total": 39176.0,
+                "payment_status": "paid"
+            }
+        },
+        {
+            "invoice_number": "INV-1005",
+            "extraction": {
+                "invoice_number": "INV-1005",
+                "invoice_date": "07-09-2026",
+                "vendor_name": "Nova Furnishings Pvt Ltd",
+                "customer_name": "Global Exports Pvt Ltd",
+                "subtotal": 226300.0,
+                "tax": 40734.0,
+                "total": 267034.0,
+                "payment_status": "unpaid"
+            }
+        },
+        {
+            "invoice_number": "INV-1006",
+            "extraction": {
+                "invoice_number": "INV-1006",
+                "invoice_date": "08-09-2026",
+                "vendor_name": "Orion Office Supplies",
+                "customer_name": "Redwood Consultancy",
+                "subtotal": 363400.0,
+                "tax": 65412.0,
+                "total": 428812.0,
+                "payment_status": "pending"
+            }
+        },
+        {
+            "invoice_number": "INV-1007",
+            "extraction": {
+                "invoice_number": "INV-1007",
+                "invoice_date": "09-09-2026",
+                "vendor_name": "Pinnacle Motors Pvt Ltd",
+                "customer_name": "Sapphire Interiors",
+                "subtotal": 293800.0,
+                "tax": 52884.0,
+                "total": 346684.0,
+                "payment_status": "paid"
+            }
+        },
+        {
+            "invoice_number": "INV-1008",
+            "extraction": {
+                "invoice_number": "INV-1008",
+                "invoice_date": "10-09-2026",
+                "vendor_name": "Crystal Apparels Ltd",
+                "customer_name": "XYZ Solutions Pvt Ltd",
+                "subtotal": 181000.0,
+                "tax": 32580.0,
+                "total": 213580.0,
+                "payment_status": "unpaid"
+            }
+        },
+        {
+            "invoice_number": "INV-1009",
+            "extraction": {
+                "invoice_number": "INV-1009",
+                "invoice_date": "11-09-2026",
+                "vendor_name": "Vertex Systems Pvt Ltd",
+                "customer_name": "Metro Retailers",
+                "subtotal": 142600.0,
+                "tax": 25668.0,
+                "total": 168268.0,
+                "payment_status": "pending"
+            }
+        },
+        {
+            "invoice_number": "INV-1010",
+            "extraction": {
+                "invoice_number": "INV-1010",
+                "invoice_date": "12-09-2026",
+                "vendor_name": "Silverline Foods Pvt Ltd",
+                "customer_name": "Skyline Enterprises",
+                "subtotal": 259200.0,
+                "tax": 46656.0,
+                "total": 305856.0,
+                "payment_status": "paid"
+            }
+        },
+        {
+            "invoice_number": "INV-1011",
+            "extraction": {
+                "invoice_number": "INV-1011",
+                "invoice_date": "13-09-2026",
+                "vendor_name": "ABC Technologies Pvt Ltd",
+                "customer_name": "Prime Constructions Ltd",
+                "subtotal": 35500.0,
+                "tax": 6390.0,
+                "total": 41890.0,
+                "payment_status": "unpaid"
+            }
+        },
+        {
+            "invoice_number": "INV-1012",
+            "extraction": {
+                "invoice_number": "INV-1012",
+                "invoice_date": "14-09-2026",
+                "vendor_name": "Bluewave Software Ltd",
+                "customer_name": "Everest Logistics Pvt Ltd",
+                "subtotal": 85500.0,
+                "tax": 15390.0,
+                "total": 100890.0,
+                "payment_status": "pending"
+            }
+        },
+        {
+            "invoice_number": "INV-1013",
+            "extraction": {
+                "invoice_number": "INV-1013",
+                "invoice_date": "15-09-2026",
+                "vendor_name": "Greenfield Traders",
+                "customer_name": "Coastal Traders",
+                "subtotal": 127500.0,
+                "tax": 22950.0,
+                "total": 150450.0,
+                "payment_status": "paid"
+            }
+        },
+        {
+            "invoice_number": "INV-1014",
+            "extraction": {
+                "invoice_number": "INV-1014",
+                "invoice_date": "16-09-2026",
+                "vendor_name": "Sunrise Electronics",
+                "customer_name": "Harmony Hospitals Pvt Ltd",
+                "subtotal": 176800.0,
+                "tax": 31824.0,
+                "total": 208624.0,
+                "payment_status": "unpaid"
+            }
+        },
+        {
+            "invoice_number": "INV-1015",
+            "extraction": {
+                "invoice_number": "INV-1015",
+                "invoice_date": "17-09-2026",
+                "vendor_name": "Nova Furnishings Pvt Ltd",
+                "customer_name": "Global Exports Pvt Ltd",
+                "subtotal": 183500.0,
+                "tax": 33030.0,
+                "total": 216530.0,
+                "payment_status": "pending"
+            }
+        },
+        {
+            "invoice_number": "INV-1016",
+            "extraction": {
+                "invoice_number": "INV-1016",
+                "invoice_date": "18-09-2026",
+                "vendor_name": "Orion Office Supplies",
+                "customer_name": "Redwood Consultancy",
+                "subtotal": 273300.0,
+                "tax": 49194.0,
+                "total": 322494.0,
+                "payment_status": "paid"
+            }
+        },
+        {
+            "invoice_number": "INV-1017",
+            "extraction": {
+                "invoice_number": "INV-1017",
+                "invoice_date": "19-09-2026",
+                "vendor_name": "Pinnacle Motors Pvt Ltd",
+                "customer_name": "Sapphire Interiors",
+                "subtotal": 134500.0,
+                "tax": 24210.0,
+                "total": 158710.0,
+                "payment_status": "unpaid"
+            }
+        },
+        {
+            "invoice_number": "INV-1018",
+            "extraction": {
+                "invoice_number": "INV-1018",
+                "invoice_date": "20-09-2026",
+                "vendor_name": "Crystal Apparels Ltd",
+                "customer_name": "XYZ Solutions Pvt Ltd",
+                "subtotal": 147000.0,
+                "tax": 26460.0,
+                "total": 173460.0,
+                "payment_status": "pending"
+            }
+        },
+        {
+            "invoice_number": "INV-1019",
+            "extraction": {
+                "invoice_number": "INV-1019",
+                "invoice_date": "21-09-2026",
+                "vendor_name": "Vertex Systems Pvt Ltd",
+                "customer_name": "Metro Retailers",
+                "subtotal": 137900.0,
+                "tax": 24822.0,
+                "total": 162722.0,
+                "payment_status": "paid"
+            }
+        },
+        {
+            "invoice_number": "INV-1020",
+            "extraction": {
+                "invoice_number": "INV-1020",
+                "invoice_date": "22-09-2026",
+                "vendor_name": "Silverline Foods Pvt Ltd",
+                "customer_name": "Skyline Enterprises",
+                "subtotal": 79800.0,
+                "tax": 14364.0,
+                "total": 94164.0,
+                "payment_status": "unpaid"
+            }
+        }
+    ]
+}

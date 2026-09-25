@@ -1,0 +1,64 @@
+{
+    "evaluation": {
+        "ocr": {
+            "status": "not_evaluated",
+            "reason": "No verified OCR reference text available."
+        },
+        "information_extraction": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "correct_fields": 160,
+            "predicted_fields": 160,
+            "expected_fields": 160,
+            "documents_evaluated": 20
+        },
+        "table": {
+            "status": "not_evaluated",
+            "reason": "No verified table ground-truth labels are available."
+        },
+        "anomaly_detection": {
+            "status": "not_evaluated",
+            "reason": "No verified anomaly ground-truth labels found."
+        },
+        "performance": {
+            "total_processing_time_seconds": 735.79,
+            "total_pages": 20,
+            "average_page_time_seconds": 36.79,
+            "pages_per_second": 0.0272
+        }
+    },
+    "evaluation_summary": {
+        "documents_evaluated": 20,
+        "information_extraction_f1": 1.0,
+        "table_extraction": "NOT EVALUATED",
+        "table_quality": {
+            "status": "quality_evaluated",
+            "pages_with_tables": 20,
+            "total_rows": 60,
+            "row_arithmetic_accuracy": 1.0,
+            "valid_formula_rows": 60,
+            "total_formula_rows": 60,
+            "subtotal_consistency_rate": 1.0,
+            "subtotal_matches": 20,
+            "subtotal_checks": 20,
+            "table_validation_rate": 1.0,
+            "valid_table_pages": 20,
+            "average_table_confidence": 0.9831
+        },
+        "anomaly_detection": "NOT EVALUATED",
+        "anomaly_pipeline_summary": {
+            "status": "descriptive_only",
+            "reason": "No verified anomaly ground truth is available, so anomaly accuracy metrics are not calculated.",
+            "ml_anomaly_count": 2,
+            "ml_normal_count": 18,
+            "ml_anomaly_rate": 0.1,
+            "average_ml_anomaly_score": 0.0,
+            "fraud_anomaly_count": 0,
+            "fraud_normal_count": 20,
+            "fraud_anomaly_rate": 0.0,
+            "average_fraud_anomaly_score": 0.0
+        },
+        "average_page_time_seconds": 36.79
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "evaluation": {
+        "ocr": {
+            "character_error_rate": 0.0909,
+            "word_error_rate": 0.5
+        },
+        "information_extraction": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "correct_fields": 3,
+            "predicted_fields": 3,
+            "expected_fields": 3
+        },
+        "table": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "expected_rows": 2,
+            "predicted_rows": 2,
+            "matched_rows": 2
+        },
+        "anomaly_detection": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "true_positive": 2,
+            "false_positive": 0,
+            "false_negative": 0,
+            "true_negative": 4,
+            "anomaly_rate": 0.3333
+        },
+        "performance": {
+            "total_processing_time_seconds": 765.78,
+            "total_pages": 20,
+            "average_page_time_seconds": 38.29,
+            "pages_per_second": 0.0261
+        }
+    },
+    "pipeline_summary": {
+        "total_pages": 20,
+        "ml_anomalous_pages": 2,
+        "suspicious_pages": 2,
+        "highly_suspicious_pages": 0,
+        "normal_signal_pages": 18,
+        "high_risk_pages": 0,
+        "medium_risk_pages": 0,
+        "low_risk_pages": 20,
+        "pipeline_anomaly_rate": 0.1
+    },
+    "project": {
+        "name": "Multimodal DCA AI",
+        "evaluation_version": "1.0",
+        "framework": "Python"
+    }
+}
