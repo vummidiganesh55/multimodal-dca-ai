@@ -1,12 +1,3 @@
-Yes — I understand exactly what you mean. You want your **Multimodal DCA AI README to have the same professional, detailed structure and style** as your Explainable Tabular ML Engine README, not a short generic README.
-
-Below is a **directly pasteable GitHub README** based on the actual components and evaluation results from your project. I have also included your requested **OCR limitation** and the **4 evaluation screenshots**.
-
-> **Important:** For the images to render, upload the four screenshots into a GitHub `screenshots/` folder and the architecture image as `architecture.png` in the repository root.
-
----
-
-````markdown
 # 🧠 Multimodal DCA AI
 
 ## Production-Oriented Multimodal Document Understanding, Extraction, Validation & Anomaly Detection System
